@@ -5,42 +5,42 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between md:pl-20 py-14 md:py-0 bg-[#E6E9F2] my-16 rounded-xl overflow-hidden">
-      {/* JBL Soundbox Image */}
+      {/* JBL Саундбоксының суреті */}
       <Image
         className="max-w-[150px] md:max-w-[200px] lg:max-w-[250px] object-contain"
         src={assets.jbl_soundbox_image}
-        alt="JBL Soundbox Image"
+        alt="JBL Саундбоксының суреті"
         priority
       />
-      {/* Text Content */}
+      {/* Мәтіндік мазмұн */}
       <div className="flex flex-col items-center justify-center text-center space-y-4 px-6 md:px-0">
         <h2 className="text-2xl md:text-3xl font-semibold max-w-[290px] md:max-w-none">
-          Level Up Your Gaming Experience
+          Ойын тәжірибеңізді жаңа деңгейге көтеріңіз
         </h2>
         <p className="max-w-[343px] font-medium text-gray-800/60">
-          From immersive sound to precise controls—everything you need to win.
+          Терең дыбыстан бастап дәл басқаруға дейін — жеңіске жету үшін барлығы.
         </p>
         <button className="group flex items-center justify-center gap-2 px-12 py-3 bg-orange-600 rounded text-white hover:bg-orange-700 transition-all">
-          Buy now
+          Сатып алу
           <Image
             className="group-hover:translate-x-1 transition-transform"
             src={assets.arrow_icon_white}
-            alt="Arrow Icon"
+            alt="Жебе белгішесі"
             width={16}
             height={16}
           />
         </button>
       </div>
-      {/* Controller Images */}
+      {/* Басқару құрылғыларының суреттері */}
       <Image
         className="hidden md:block max-w-[300px] lg:max-w-[350px] object-contain"
         src={assets.md_controller_image}
-        alt="Gaming Controller for Medium Screens"
+        alt="Орташа экрандарға арналған ойын басқару құрылғысы"
       />
       <Image
         className="md:hidden max-w-[200px] object-contain"
         src={assets.sm_controller_image}
-        alt="Gaming Controller for Small Screens"
+        alt="Шағын экрандарға арналған ойын басқару құрылғысы"
       />
     </div>
   );
