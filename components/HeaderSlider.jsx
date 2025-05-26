@@ -6,26 +6,26 @@ const HeaderSlider = () => {
   const sliderData = [
     {
       id: 1,
-      title: "Experience Pure Sound - Your Perfect Headphones Awaits!",
-      offer: "Limited Time Offer 30% Off",
-      buttonText1: "Buy now",
-      buttonText2: "Find more",
+      title: "Таза дыбысты сезініңіз - Сіздің мінсіз құлаққабыңыз осында!",
+      offer: "Шектеулі ұсыныс: 30% жеңілдік",
+      buttonText1: "Сатып алу",
+      buttonText2: "Толығырақ білу",
       imgSrc: assets.header_headphone_image,
     },
     {
       id: 2,
-      title: "Next-Level Gaming Starts Here - Discover PlayStation 5 Today!",
-      offer: "Hurry up only few lefts!",
-      buttonText1: "Shop Now",
-      buttonText2: "Explore Deals",
+      title: "Келесі деңгейдегі ойын осында басталады - PlayStation 5-ті бүгін табыңыз!",
+      offer: "Асығыңыз, тек санаулы қалған!",
+      buttonText1: "Дүкенге өту",
+      buttonText2: "Ұсыныстарды қарау",
       imgSrc: assets.header_playstation_image,
     },
     {
       id: 3,
-      title: "Power Meets Elegance - Apple MacBook Pro is Here for you!",
-      offer: "Exclusive Deal 40% Off",
-      buttonText1: "Order Now",
-      buttonText2: "Learn More",
+      title: "Күш пен әсемдіктің үйлесімі - Apple MacBook Pro Сіз үшін!",
+      offer: "Эксклюзивті ұсыныс: 40% жеңілдік",
+      buttonText1: "Тапсырыс беру",
+      buttonText2: "Толығырақ",
       imgSrc: assets.header_macbook_image,
     },
   ];
@@ -75,7 +75,7 @@ const HeaderSlider = () => {
               <Image
                 className="md:w-72 w-48"
                 src={slide.imgSrc}
-                alt={`Slide ${index + 1}`}
+                alt={`Слайд ${index + 1}`}
               />
             </div>
           </div>

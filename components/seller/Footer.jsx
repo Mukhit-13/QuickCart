@@ -6,21 +6,21 @@ const Footer = () => {
   return (
     <div className="flex md:flex-row flex-col-reverse items-center justify-between text-left w-full px-10">
       <div className="flex items-center gap-4">
-        <Image className="hidden md:block" src={assets.logo} alt="logo" />
+        <Image className="hidden md:block" src={assets.logo} alt="логотип" />
         <div className="hidden md:block h-7 w-px bg-gray-500/60"></div>
         <p className="py-4 text-center text-xs md:text-sm text-gray-500">
-          Copyright 2025 © greatstack.dev All Right Reserved.
+          Copyright 2025 © greatstack.dev Барлық құқықтар қорғалған.
         </p>
       </div>
       <div className="flex items-center gap-3">
         <a href="#">
-          <Image src={assets.facebook_icon} alt="facebook_icon" />
+          <Image src={assets.facebook_icon} alt="facebook белгісі" />
         </a>
         <a href="#">
-          <Image src={assets.twitter_icon} alt="twitter_icon" />
+          <Image src={assets.twitter_icon} alt="twitter белгісі" />
         </a>
         <a href="#">
-          <Image src={assets.instagram_icon} alt="instagram_icon" />
+          <Image src={assets.instagram_icon} alt="instagram белгісі" />
         </a>
       </div>
     </div>

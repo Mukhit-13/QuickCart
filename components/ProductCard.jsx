@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
                     <Image
                         className="h-3 w-3"
                         src={assets.heart_icon}
-                        alt="heart_icon"
+                        alt="жүрек белгішесі"
                     />
                 </button>
             </div>
@@ -43,7 +43,7 @@ const ProductCard = ({ product }) => {
                                     ? assets.star_icon
                                     : assets.star_dull_icon
                             }
-                            alt="star_icon"
+                            alt="жұлдыз белгішесі"
                         />
                     ))}
                 </div>
@@ -52,7 +52,7 @@ const ProductCard = ({ product }) => {
             <div className="flex items-end justify-between w-full mt-1">
                 <p className="text-base font-medium">{currency}{product.offerPrice}</p>
                 <button className=" max-sm:hidden px-4 py-1.5 text-gray-500 border border-gray-500/20 rounded-full text-xs hover:bg-slate-50 transition">
-                    Buy now
+                    Сатып алу
                 </button>
             </div>
         </div>

@@ -25,17 +25,17 @@ const ProductList = () => {
   return (
     <div className="flex-1 min-h-screen flex flex-col justify-between">
       {loading ? <Loading /> : <div className="w-full md:p-10 p-4">
-        <h2 className="pb-4 text-lg font-medium">All Product</h2>
+        <h2 className="pb-4 text-lg font-medium">Барлық өнімдер</h2>
         <div className="flex flex-col items-center max-w-4xl w-full overflow-hidden rounded-md bg-white border border-gray-500/20">
           <table className=" table-fixed w-full overflow-hidden">
             <thead className="text-gray-900 text-sm text-left">
               <tr>
-                <th className="w-2/3 md:w-2/5 px-4 py-3 font-medium truncate">Product</th>
-                <th className="px-4 py-3 font-medium truncate max-sm:hidden">Category</th>
+                <th className="w-2/3 md:w-2/5 px-4 py-3 font-medium truncate">Өнім</th>
+                <th className="px-4 py-3 font-medium truncate max-sm:hidden">Санат</th>
                 <th className="px-4 py-3 font-medium truncate">
-                  Price
+                  Бағасы
                 </th>
-                <th className="px-4 py-3 font-medium truncate max-sm:hidden">Action</th>
+                <th className="px-4 py-3 font-medium truncate max-sm:hidden">Әрекет</th>
               </tr>
             </thead>
             <tbody className="text-sm text-gray-500">
@@ -45,7 +45,7 @@ const ProductList = () => {
                     <div className="bg-gray-500/10 rounded p-2">
                       <Image
                         src={product.image[0]}
-                        alt="product Image"
+                        alt="Өнімнің суреті"
                         className="w-16"
                         width={1280}
                         height={720}
@@ -59,7 +59,7 @@ const ProductList = () => {
                   <td className="px-4 py-3">${product.offerPrice}</td>
                   <td className="px-4 py-3 max-sm:hidden">
                     <button onClick={() => router.push(`/product/${product._id}`)} className="flex items-center gap-1 px-1.5 md:px-3.5 py-2 bg-orange-600 text-white rounded-md">
-                      <span className="hidden md:block">Visit</span>
+                      <span className="hidden md:block">Көру</span>
                       <Image
                         className="h-3.5"
                         src={assets.redirect_icon}
